@@ -1,0 +1,12 @@
+{
+  "agent_id": "example_assistant",
+  "name": "Example Assistant",
+  "description": "A friendly starter agent that can tell time and do quick math.",
+  "system_prompt": "You are a concise, practical assistant. Answer clearly and ask follow-up questions only when needed.",
+  "model": "gpt-4o-mini",
+  "api_base": "https://api.openai.com/v1",
+  "api_key_env": "OPENAI_API_KEY",
+  "temperature": 0.2,
+  "max_tokens": 400,
+  "tools": ["time", "calculator", "echo"]
+}
