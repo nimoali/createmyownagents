@@ -12,14 +12,14 @@ Create your own agents with a small Python framework:
 ### 1) Create a virtual environment (optional)
 
 ```bash
-python -m venv .venv
+python3 -m venv .venv
 source .venv/bin/activate
 ```
 
 ### 2) Install locally
 
 ```bash
-pip install -e .
+python3 -m pip install -e .
 ```
 
 ### 3) Set your API key
@@ -31,7 +31,7 @@ export OPENAI_API_KEY="your_api_key_here"
 ### 4) Create your first agent config
 
 ```bash
-python -m custom_agents create support_bot --name "Support Bot"
+python3 -m custom_agents create support_bot --name "Support Bot"
 ```
 
 This creates:
@@ -52,13 +52,13 @@ Open `agents/support_bot.json` and edit:
 ### 6) Chat with your agent
 
 ```bash
-python -m custom_agents chat agents/support_bot.json
+python3 -m custom_agents chat agents/support_bot.json
 ```
 
 Single-message mode:
 
 ```bash
-python -m custom_agents chat agents/support_bot.json --message "Give me a 3-step launch plan"
+python3 -m custom_agents chat agents/support_bot.json --message "Give me a 3-step launch plan"
 ```
 
 ## Built-in tools
@@ -66,7 +66,7 @@ python -m custom_agents chat agents/support_bot.json --message "Give me a 3-step
 List available tool names:
 
 ```bash
-python -m custom_agents list-tools
+python3 -m custom_agents list-tools
 ```
 
 Default tools:
@@ -110,5 +110,5 @@ The runtime sends requests to:
 ## Run tests
 
 ```bash
-python -m unittest discover -s tests -v
+python3 -m unittest discover -s tests -v
 ```
